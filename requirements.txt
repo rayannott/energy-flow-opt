@@ -3,4 +3,5 @@ plotly
 nbformat
 matplotlib
 pyomo
+pandas
 openpyxl
