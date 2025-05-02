@@ -33,7 +33,7 @@ class EnergyFlowOptimization:
 
         # initialize time-dependent parameters (given data: convert to dict for pyomo)
         pv_prod_dict = self.df["pv production, kWh"].to_dict()
-        elec_cons_dict = self.df["electrical consumption, kWh"].to_dict()
+        elec_cons_dict = self.df["electrical consumption, kWh"].to_dict()  # essentially, demand
         lcos_dict = self.df["lcos, c/kWh"].to_dict()
         price_sell_dict = self.df["electricity selling price, c/kWh"].to_dict()
         price_buy_dict = self.df["electricity buying price c/kWh"].to_dict()
