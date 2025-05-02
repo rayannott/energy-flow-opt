@@ -1,0 +1,5 @@
+ipykernel
+plotly
+matplotlib
+pyomo
+openpyxl
