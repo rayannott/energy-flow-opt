@@ -1,5 +1,6 @@
 ipykernel
 plotly
+nbformat
 matplotlib
 pyomo
 openpyxl
