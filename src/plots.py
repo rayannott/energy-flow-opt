@@ -4,6 +4,12 @@ import pandas as pd
 
 
 def generate_data_plot(df: pd.DataFrame) -> go.Figure:
+    """
+    Generate a figure with the given data for this optimization task.
+
+    Usage:
+    >>> generate_data_plot(df).show()
+    """
     fig = make_subplots(specs=[[{"secondary_y": True}]])
     fig.add_trace(
         go.Scatter(

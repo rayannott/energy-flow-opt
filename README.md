@@ -26,5 +26,33 @@ Install the dependencies
 uv pip install -r requirements.txt
 ```
 
+### 3. Other
+Install `glpsolve` to enable the `glpk` pyomo solver.
+
+Ensure that it is installed correctly by running 
+```shell
+glpsol --version
+```
+
+
 ## My Approach
 First of all, I read the data using `pandas` to let it infer the types (datetime objects, floats, etc.).
+
+I plot the data to take an insight into it (twin axes seems like the right choice here).
+
+Then, I define the problem class in `src/pyomo_setup.py` and define the model, parameters and variables (hopefully following pyomo best practices).
+
+
+
+## Optional Sections
+
+### Part B
+
+### Part C
+
+
+
+# Some References
+- [1] https://pyomo.readthedocs.io/en/stable/howto/solver_recipes.html
+- [2] https://pyomo.readthedocs.io/en/6.8.0/tutorial_examples.html
+
